@@ -13,7 +13,6 @@ public class TestBase {
 
     public static WebDriver driver;
 
-    @Test
     @BeforeTest
     @Parameters({"browser"})
     public void startDriver(@Optional("firefox") String browserName) {
@@ -41,8 +40,8 @@ public class TestBase {
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 
-        // Stage Link
-        driver.navigate().to("https://www.google.com/");
+        // Link
+        driver.navigate().to("https://the-internet.herokuapp.com/login");
 
         // Demo Link
         // driver.navigate().to("Link demo here");
