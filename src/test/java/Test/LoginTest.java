@@ -4,6 +4,8 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import page.LoginPage;
 
+import java.util.concurrent.TimeUnit;
+
 public class LoginTest extends TestBase {
     LoginPage loginPage;
 
@@ -45,5 +47,14 @@ public class LoginTest extends TestBase {
         loginPage.AddPassWord("SuperSecretPassword!");
         loginPage.clickLogin();
         Assert.assertTrue(loginPage.errorMsg.getText().contains("You logged into a secure area!"));
+    }
+
+    @Test(priority = 5)
+    public void AddValidAccountAndClickBack() {
+
+        loginPage = new LoginPage(driver);
+        loginPage.clickLogout();
+        driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        Assert.assertTrue(loginPage.errorMsg.getText().contains("You logged out of the secure area!"));
     }
 }

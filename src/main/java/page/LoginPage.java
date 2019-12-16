@@ -14,6 +14,9 @@ public class LoginPage extends PageBase {
     public WebElement password;
     @FindBy(xpath = "//*[@id=\"login\"]/button")
     public WebElement loginBt;
+    @FindBy(xpath = "//*[@id=\"content\"]/div/a")
+    public WebElement logoutBt;
+
 
     public LoginPage(WebDriver driver) {
         super(driver);
@@ -27,5 +30,8 @@ public class LoginPage extends PageBase {
     }
     public void clickLogin (){
         loginBt.click();
+    }
+    public void clickLogout (){
+        logoutBt.click();
     }
 }
