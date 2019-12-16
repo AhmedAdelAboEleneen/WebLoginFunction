@@ -1,5 +1,6 @@
 package Test;
 
+import org.openqa.selenium.Keys;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import page.LoginPage;
@@ -50,11 +51,22 @@ public class LoginTest extends TestBase {
     }
 
     @Test(priority = 5)
-    public void AddValidAccountAndClickBack() {
+    public void LogOut() {
 
         loginPage = new LoginPage(driver);
         loginPage.clickLogout();
         driver.manage().timeouts().implicitlyWait(3,TimeUnit.SECONDS);
+        Assert.assertTrue(loginPage.errorMsg.getText().contains("You logged out of the secure area!"));
+    }
+
+    @Test(priority = 6)
+    public void clickBackBrowser() {
+
+        loginPage = new LoginPage(driver);
+        loginPage.AddUserName("tomsmith");
+        loginPage.AddPassWord("SuperSecretPassword!");
+        loginPage.clickLogin();
+        driver.navigate().back();
         Assert.assertTrue(loginPage.errorMsg.getText().contains("You logged out of the secure area!"));
     }
 }

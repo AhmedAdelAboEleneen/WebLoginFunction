@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c4456d12-1a39-4971-92eb-62ccd4b71f72" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/page/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/LoginPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Test/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/LoginTest.class" afterDir="false" />
     </list>
@@ -73,6 +72,42 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="LoginTest.AddSpaces" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Web_Example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.LoginTest" />
+      <option name="METHOD_NAME" value="AddSpaces" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.clickBack" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Web_Example" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.LoginTest" />
+      <option name="METHOD_NAME" value="clickBack" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestBase" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Web_Example" />
       <extension name="coverage">
@@ -111,6 +146,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.LoginTest" />
+        <item itemvalue="TestNG.LoginTest.AddSpaces" />
+        <item itemvalue="TestNG.LoginTest.clickBack" />
         <item itemvalue="TestNG.TestBase.startDriver" />
         <item itemvalue="TestNG.TestBase" />
       </list>
@@ -155,7 +192,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576423447158</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add logout testcase">
+      <created>1576492225974</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1576492225974</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -175,6 +219,7 @@
     <MESSAGE value="Add new change in TestBase" />
     <MESSAGE value="init" />
     <MESSAGE value="Add Login Test cases" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add Login Test cases" />
+    <MESSAGE value="add logout testcase" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logout testcase" />
   </component>
 </project>
