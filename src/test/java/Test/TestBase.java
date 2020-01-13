@@ -1,12 +1,12 @@
 package Test;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.*;
 import utilities.Helper;
-
 import java.util.concurrent.TimeUnit;
 
 public class TestBase {
@@ -18,22 +18,11 @@ public class TestBase {
     public void startDriver(@Optional("firefox") String browserName) {
 
         if (browserName.equalsIgnoreCase("firefox")) {
-
-            // For Windows
-
-             System.setProperty("webdriver.gecko.driver",
-             System.getProperty("user.dir") + "/drivers/geckodriver.exe");
-
-           /*  For Linux
-            System.setProperty("webdriver.gecko.driver",
-                    System.getProperty("user.dir") + "/drivers/geckodriver");*/
-
+            WebDriverManager.firefoxdriver().setup();
             driver = new FirefoxDriver();
 
         } else if (browserName.equalsIgnoreCase("chrome")) {
-
-            System.setProperty("webdriver.chrome.driver",
-                    System.getProperty("user.dir") + "/drivers/chromedriver");
+            WebDriverManager.chromedriver().setup();
             driver = new ChromeDriver();
         }
 

@@ -1,10 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c4456d12-1a39-4971-92eb-62ccd4b71f72" name="Default Changelist" comment="">
+    <list default="true" id="c4456d12-1a39-4971-92eb-62ccd4b71f72" name="Default Changelist" comment="add logout testcase">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNg.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/page/PageBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/page/PageBase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Test/TestBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Test/TestBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/utilities/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/utilities/Helper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Test/LoginTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/LoginTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Test/TestBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Test/TestBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/utilities/Helper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/utilities/Helper.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +63,24 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.LoginTest (1)">
+    <configuration name="LoginTest (1)" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="WebLoginFunction" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Test" />
+      <option name="MAIN_CLASS_NAME" value="Test.LoginTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="LoginTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Web_Example" />
       <extension name="coverage">
@@ -108,23 +134,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestBase" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Web_Example" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="Test" />
-      <option name="MAIN_CLASS_NAME" value="Test.TestBase" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestBase.startDriver" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Web_Example" />
       <extension name="coverage">
@@ -145,11 +154,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.LoginTest (1)" />
         <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.LoginTest.AddSpaces" />
         <item itemvalue="TestNG.LoginTest.clickBack" />
         <item itemvalue="TestNG.TestBase.startDriver" />
-        <item itemvalue="TestNG.TestBase" />
       </list>
     </recent_temporary>
   </component>
